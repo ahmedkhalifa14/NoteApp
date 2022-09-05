@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_7sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:id="@+id/custom_note_layout"
+    app:cardElevation="@dimen/_8sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+        <FrameLayout
+            android:id="@+id/fl_rate"
+            android:layout_gravity="end"
+            android:layout_width="@dimen/_25sdp"
+            android:background="@drawable/rate_background"
+            android:layout_height="@dimen/_25sdp"/>
+        <TextView
+            android:id="@+id/custom_note_title_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            android:fontFamily="@font/brandon_grotesque_bold_italic_58a8a48221563"
+            android:gravity="center"
+            android:text="@string/note_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/custom_note_body_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:maxHeight="@dimen/_160sdp"
+            android:padding="@dimen/_3sdp"
+            android:text="@string/note_body"
+            android:textColor="@color/black70"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/brandon_grotesque_bold_italic_58a8a48221563"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/custom_note_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:maxHeight="@dimen/_160sdp"
+            android:padding="@dimen/_3sdp"
+            android:text="@string/date"
+            android:maxLines="3"
+            android:textColor="@color/black70"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="normal"
+            android:gravity="end"
+            android:fontFamily="@font/brandon_grotesque_regular_italic_58a8a456c4724"
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

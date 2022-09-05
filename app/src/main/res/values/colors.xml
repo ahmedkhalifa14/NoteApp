@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#803c94</color>-->
+<!--    <color name="colorPrimaryDark">#803c94</color>-->
+<!--    <color name="colorAccent">#936B9F</color>-->
+<!--    <color name="black">#FF000000</color>-->
+<!--    <color name="white">#FFFFFFFF</color>-->
+<!--    <color name="backgroundWhite">#EDE9E9</color>-->
+<!--    <color name="hintColor">#928E8E</color>-->
+
+    <color name="colorPrimary">#171C26</color>
+    <color name="colorPrimaryDark">#10141C</color>
+    <color name="colorAccent">#4e33ff</color>
+
+    <color name="ColorWhite">#ffffff</color>
+    <color name="ColorWhite2">#F7F9F9</color>
+    <color name="ColorBlack">#171C26</color>
+    <color name="ColorText">#606570</color>
+    <color name="ColorYellow">#ffd633</color>
+    <color name="ColorBlue">#4e33ff</color>
+
+    <color name="ColorDefaultNote">#606570</color>
+    <color name="ColorBlueNote">#4e33ff</color>
+    <color name="ColorYellowNote">#ffd633</color>
+    <color name="ColorWhiteNote">#ffffff</color>
+    <color name="ColorPurpleNote">#ae3b76</color>
+    <color name="ColorGreenNote">#0aebaf</color>
+    <color name="ColorOrangeNote">#ff7746</color>
+    <color name="ColorBlackNote">#202734</color>
+
+
+
+    <color name="black">#FF000000</color>
+    <color name="black70">#B3000000</color>
+    <color name="black50">#80000000</color>
+    <color name="black30">#4D000000</color>
+    <color name="black10">#1A000000</color>
+</resources>

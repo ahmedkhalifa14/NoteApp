@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorWhite"
+    tools:context=".fragments.UpdateNoteFragment">
+
+    <ProgressBar
+        android:id="@+id/update_note_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_centerInParent="true"
+        android:elevation="@dimen/_7sdp"
+        android:indeterminateTint="@color/ColorWhite"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_16sdp"
+            android:backgroundTint="@color/ColorWhite"
+            android:elevation="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_16sdp">
+
+                <EditText
+                    android:id="@+id/note_title_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:background="@android:color/transparent"
+                    android:hint="@string/title"
+                    android:inputType="text"
+                    android:textColor="@color/ColorBlackNote"
+                    android:textColorHint="@color/black30"
+                    android:textSize="@dimen/_18ssp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/note_body_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:autofillHints=""
+                    android:background="@android:color/transparent"
+                    android:gravity="start|top"
+                    android:hint="@string/write_something"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/ColorBlackNote"
+                    android:textColorHint="@color/black30"
+                    android:textSize="@dimen/_14ssp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/color"
+                        android:textSize="@dimen/_15ssp"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+
+                    <Spinner
+                        android:id="@+id/colorSpinner"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_25sdp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:spinnerMode="dialog"
+                        android:background="@drawable/color_blob"
+                        android:layout_marginEnd="@dimen/_15sdp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
